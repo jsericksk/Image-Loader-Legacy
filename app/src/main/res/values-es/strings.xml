@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Geral -->
+	<string name="app_name">Image Loader</string>
+	<string name="button_cancel">Cancelar</string>
+	<string name="button_select">Seleccione</string>
+	
+	<!-- MainActivity -->
+	<string name="textview_empty_image_list">Lista de imágenes vacía!</string>
+	<string name="textview_loading_page">Cargando datos de la página...</string>
+	<string name="toast_page_without_images">No se encontraron imágenes en esta página.</string>
+	<string name="toast_load_data_page_error">Se produjo un error al cargar los datos de la página.</string>
+	<string name="toast_load_data_page_timeout_error">Error al cargar los datos de la página. Solicitud agotada.</string>
+	<string name="toast_load_data_url_invalid">URL no válida para procesar datos.</string>
+	<string name="toast_download_service_is_running">Debe esperar a que se descarguen las imágenes antes de que pueda comenzar una nueva descarga.</string>
+	<string name="actionbar_title">Imágenes:</string>
+	<string name="dialog_page_url">URL de la Página</string>
+	<string name="dialog_load_page">Cargar Página</string>
+	<string name="edittext_folder_name">Nombre de Carpeta</string>
+	<string name="dialog_download_images">Descargar Imágenes</string>
+	<string name="navigationview_open">Abierto</string>
+	<string name="navigationview_close">Cerrar</string>
+	<string name="menu_navigationview_share">Compartir</string>
+	<string name="menu_navigationview_feedback">Feedback</string>
+	<string name="menu_filter">Filtro</string>
+	<string name="dialog_filter_images">Filtrar Imágenes</string>
+	<string name="dialog_no_filter_images">No filtrar imágenes</string>
+	<string name="share_app_extra_text_message">Estoy usando esta aplicación y es muy buena. ¡Con él puedo cargar y descargar imágenes de sitios web muy fácilmente! Compruébalo: https://play.google.com/store/apps/details?id=com.kproject.imageloader</string>
+	<string name="feedback_app">Feedback - Image Loader</string>
+	<string name="checkbox_download_in_range">Descargar en un Rango Específico</string>
+	<string name="textview_download_in_range">Total de imágenes: %1$s.&lt;br/>Descargar de la imagen %2$s a %3$s.&lt;p/>&lt;b>Nota: &lt;/b>Las imágenes seleccionadas previamente serán ignoradas.</string>
+	<string name="dialog_enter_data">Ingresar Datos</string>
+	<string name="dialog_page_url_or_query">Ingrese una URL para cargar imágenes de la página o una palabra clave para hacer una búsqueda.</string>
+	<string name="dialog_hint_page_url_or_query">URL o palabra clave</string>
+	<string name="textview_searching">Buscando \"%1$s\"...</string>
+	<string name="snackbar_exit_confirmation">¿Seguro que quieres salir de la aplicación?</string>
+	<string name="snackbar_exit">Salir</string>
+	<string name="toast_exit_confirmation">Presione nuevamente para salir</string>
+	<string name="dialog_download_links">Descargar Enlaces</string>
+	<string name="edittext_file_name">Nombre de Archivo</string>
+	<string name="toast_download_links_error">Lamentablemente hubo un error al guardar el archivo.</string>
+	<string name="toast_file_name_empty_error">El nombre del archivo no puede estar vacío.</string>
+	<string name="dialog_links_downloaded_successfully">Archivo Guardado</string>
+	<string name="dialog_links_downloaded_successfully_message">El archivo que contiene los enlaces se ha guardado correctamente. Ruta completa: %1$s</string>
+	
+	<!-- DownloadService -->
+	<string name="notification_preparing_download">Preparando Descarga</string>
+	<string name="notification_downloading_images">Descargar Imágenes</string>
+	<string name="notification_downloading">Descargando</string>
+	<string name="notification_download_completed">Descargar Terminado</string>
+	<string name="notification_downloaded_images">imágenes descargadas con éxito</string>
+	<string name="notification_image_download_failed">fallado</string>
+	<string name="notification_images_download_failed">fallado</string>
+	<string name="notification_all_downloads_failed">Lamentablemente no se han descargado imágenes</string>
+	<string name="notification_channel_image_download">Descargar Imágenes</string>
+	<string name="notification_channel_image_download_description">Canal de notificación de descargas de Image Loader</string>
+	
+	<!-- ImageViewerActivity -->
+	<string name="share_image_error">Se produjo un error al cargar la imagen para compartir.</string>
+	<string name="share_image_message">Compartir imagen con:</string>
+	<string name="toast_image_downloaded_successfully">Imagen guardada con éxito! Ruta completa: %1$s</string>
+	<string name="toast_download_image_error">Se produjo un error al cargar la imagen para descargar.</string>
+	<string name="dialog_request_permission_to_save_and_share">Debe otorgar permiso para que la aplicación funcione correctamente para descargar y compartir las imágenes.</string>
+	<string name="toolbar_subtitle_image">Imagen</string>
+	<string name="dialog_image_info">Información de Imagen</string>
+	<string name="dialog_image_info_name">Nombre:</string>
+	<string name="dialog_image_info_size">Tamaño:</string>
+	<string name="dialog_image_info_resolution">Resolución:</string>
+	<string name="dialog_image_info_url">URL:</string>
+	<string name="dialog_image_info_source">Fuente:</string>
+	<string name="toast_image_info_error">Se produjo un error al cargar la información.</string>
+	<string name="toast_image_url_copied">URL de la imagen copiada!</string>
+	<string name="dialog_downloading_image">Descargando imagen. Por favor espera...</string>
+	<string name="toast_download_image_cancelled">Descarga cancelada.</string>
+	
+	<!-- BookmarksActivity -->
+	<string name="textview_empty_bookmark_list">¡Aún no se han agregado favoritos!</string>
+	<string name="dialog_add_bookmark">Añadir Favorito</string>
+	<string name="dialog_edit_bookmark">Editar Favorito</string>
+	<string name="dialog_delete_bookmark">Eliminar Favorito</string>
+	<string name="dialog_delete_bookmark_confirmation">¿Seguro que quieres eliminar este favorito?</string>
+	<string name="dialog_bookmark_title">Titulo</string>
+	<string name="dialog_load_page_url">¿Quieres cargar la página ahora?</string>
+	<string name="dialog_request_permission_to_import_and_export_bookmarks">Debe otorgar permiso a la aplicación para que funcione correctamente al importar/exportar marcadores.</string>
+	<string name="toast_successfully_imported_bookmarks">¡Favoritos importados con éxito!</string>
+	<string name="toast_successfully_exported_bookmarks">¡Favoritos exportados con éxito!</string>
+	<string name="toast_need_export_bookmarks_before">Debes exportar los favoritos primero.</string>
+	<string name="toast_import_bookmarks_error">Lamentablemente, se produjo un error al importar los marcadores.</string>
+	<string name="toast_export_bookmarks_error">Lamentablemente, se produjo un error al exportar los marcadores.</string>
+	<string name="toast_bookmark_url_invalid">La URL de la página debe ser una URL válida.</string>
+	<string name="toast_bookmark_empty_fields_error">Debes completar todos los campos.</string>
+	
+	<!-- SettingsActivity -->
+	<string name="preference_general">General</string>
+	<string name="preference_image_viewer">Visor de Imágenes</string>
+	<string name="preference_network">Hamaca</string>
+	<string name="preference_downloads">Descargas</string>
+	<string name="preference_about">Acerca de</string>
+	<string name="preference_summary_select_app_theme">Seleccione el tema general de la aplicación</string>
+	<string name="preference_show_page_title">Mostrar Título de la Página</string>
+	<string name="preference_summary_show_page_title">Obtener y mostrar el título de la página en la parte superior de la pantalla al cargar datos</string>
+	<string name="preference_list_with_cardview">Lista con CardView</string>
+	<string name="preference_list_with_grid">Lista de Cuadrícula</string>
+	<string name="preference_summary_list_with_grid">Los nombres de las imágenes no se mostrarán en la lista de cuadrículas</string>
+	<string name="preference_list_with_grid_columns">Numero de Columnas</string>
+	<string name="preference_summary_list_with_grid_columns">Número de columnas en la lista de cuadrícula</string>
+	<string name="preference_background_color">Color de Fondo</string>
+	<string name="preference_zoom_level">Nivel de zoom</string>
+	<string name="preference_summary_zoom_level">Elija el nivel de zoom máximo</string>
+	<string name="preference_hide_statusbar">Ocultar Barra de Estado</string>
+	<string name="preference_user_agent">Agente de Usuario</string>
+	<string name="preference_summary_user_agent">Esto puede cambiar la cantidad de imágenes que se muestran según la página</string>
+	<string name="preference_request_timeout">Solicitar Tiempo de Espera</string>
+	<string name="preference_summary_request_timeout">Solicitar tiempo de espera para obtener datos de una página</string>
+	<string name="preference_download_path">Carpeta de Descargas</string>
+	<string name="preference_overwrite_existing_file">Sobrescribir Archivo Existente</string>
+	<string name="preference_summary_overwrite_existing_file">Sobrescribe los archivos existentes con el mismo nombre durante la descarga. Si no está marcada, los archivos existentes recibirán diferentes nombres (recomendado)</string>
+	<string name="preference_facebook_page">Página de Facebook</string>
+	<string name="preference_summary_facebook_page">Dale Me gusta a la página de Facebook de K-Projects y mantente al tanto de las principales noticias</string>
+	<string name="preference_open_source_license">Licencia de Código Abierto</string>
+	<string name="dialog_app_theme">Tema de la Aplicación</string>
+	<string name="preference_exit_confirmation">Confirmación de Salida</string>
+	<string name="preference_summary_exit_confirmation">Elija la acción que debe realizar el botón "atrás" en la pantalla de inicio</string>
+	
+	<!-- FolderChooserDialogActivity -->
+	<string name="dialog_request_permission">Solicitud de Permiso</string>
+	<string name="dialog_request_permission_info">Debe otorgar permiso para que funcione el administrador de archivos. No se preocupe, la aplicación no recopila ningún archivo o carpeta para compartir con otros, y no se obtienen datos de ningún servidor.</string>
+	<string name="toast_folder_invalid">No puede seleccionar esta carpeta.</string>
+	<string name="textview_path">Camino:</string>
+	
+	<!-- Menus -->
+	<string name="menu_settings">Configuraciones</string>
+	<string name="menu_action_download">Descargar</string>
+	<string name="menu_action_select_all">Seleccionar Todo</string>
+	<string name="menu_bookmarks_import_bookmarks">Importar Favoritos</string>
+	<string name="menu_bookmarks_export_bookmarks">Exportar Favoritos</string>
+	
+	<!-- Labels -->
+	<string name="label_settings">Configuraciones</string>
+	<string name="label_bookmarks">Favoritos</string>
+	<string name="label_privacy_policy">Política de Privacidad</string>
+	
+</resources>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Geral -->
+	<string name="app_name">Image Loader</string>
+	<string name="admob_app_id">NOADS</string>
+	<string name="admob_unit_id_one">NOADS</string>
+	<string name="button_cancel">Cancel</string>
+	<string name="button_select">Select</string>
+	
+	<!-- MainActivity -->
+	<string name="textview_empty_image_list">Empty image list!</string>
+	<string name="textview_loading_page">Loading page data...</string>
+	<string name="toast_page_without_images">No images were found on this page.</string>
+	<string name="toast_load_data_page_error">There was an error loading page data.</string>
+	<string name="toast_load_data_page_timeout_error">Error loading page data. Request timed out.</string>
+	<string name="toast_load_data_url_invalid">Invalid URL to process data.</string>
+	<string name="toast_download_service_is_running">You must wait for the images to download before a new download can begin.</string>
+	<string name="actionbar_title">Images:</string>
+	<string name="dialog_page_url">Page URL</string>
+	<string name="dialog_load_page">Load Page</string>
+	<string name="edittext_folder_name">Folder Name</string>
+	<string name="dialog_download_images">Download Images</string>
+	<string name="navigationview_open">Open</string>
+	<string name="navigationview_close">Close</string>
+	<string name="menu_navigationview_share">Share</string>
+	<string name="menu_navigationview_feedback">Feedback</string>
+	<string name="menu_filter">Filter</string>
+	<string name="dialog_filter_images">Filter Images</string>
+	<string name="dialog_no_filter_images">Do not filter images</string>
+	<string name="share_app_extra_text_message">I am using this app and it is very good! With it I can load and download images from websites very easily! Check it out: https://play.google.com/store/apps/details?id=com.kproject.imageloader</string>
+	<string name="feedback_app">Feedback - Image Loader</string>
+	<string name="checkbox_download_in_range">Download at a Specific Range</string>
+	<string name="textview_download_in_range">Total Images: %1$s.&lt;br/>Download from image %2$s to %3$s.&lt;p/>&lt;b>Note: &lt;/b>Previously selected images will be ignored.</string>
+	<string name="dialog_enter_data">Enter Data</string>
+	<string name="dialog_page_url_or_query">Enter a URL to load page images or a keyword to do a search.</string>
+	<string name="dialog_hint_page_url_or_query">URL or keyword</string>
+	<string name="textview_searching">Searching for \"%1$s\"...</string>
+	<string name="snackbar_exit_confirmation">Are you sure you want to exit the application?</string>
+	<string name="snackbar_exit">Exit</string>
+	<string name="toast_exit_confirmation">Press again to exit</string>
+	
+	<!-- DownloadService -->
+	<string name="notification_preparing_download">Preparing Download</string>
+	<string name="notification_downloading_images">Downloading Images</string>
+	<string name="notification_downloading">Downloading</string>
+	<string name="notification_download_completed">Download Finished</string>
+	<string name="notification_downloaded_images">successfully downloaded images</string>
+	<string name="notification_image_download_failed">failed</string>
+	<string name="notification_images_download_failed">failed</string>
+	<string name="notification_all_downloads_failed">Unfortunately no images have been downloaded</string>
+	<string name="notification_channel_image_download">Download Images</string>
+	<string name="notification_channel_image_download_description">Image Loader Downloads Notification Channel</string>
+	
+	<!-- ImageViewerActivity -->
+	<string name="share_image_error">There was an error loading the image to share.</string>
+	<string name="share_image_message">Share image with:</string>
+	<string name="toast_image_downloaded_successfully">Image saved successfully! Full path: %1$s</string>
+	<string name="toast_download_image_error">There was an error loading the image to download.</string>
+	<string name="dialog_request_permission_to_save_and_share">You must grant permission for the application to function properly to download and share the images.</string>
+	<string name="toolbar_subtitle_image">Image</string>
+	<string name="dialog_image_info">Image Info</string>
+	<string name="dialog_image_info_name">Name:</string>
+	<string name="dialog_image_info_size">Size:</string>
+	<string name="dialog_image_info_resolution">Resolution:</string>
+	<string name="dialog_image_info_url">URL:</string>
+	<string name="dialog_image_info_source">Source:</string>
+	<string name="toast_image_info_error">There was an error loading the information.</string>
+	<string name="dialog_download_links">Download Links</string>
+	<string name="edittext_file_name">File Name</string>
+	<string name="toast_download_links_error">Unfortunately there was an error saving the file.</string>
+	<string name="toast_file_name_empty_error">The file name cannot be empty.</string>
+	<string name="dialog_links_downloaded_successfully">Saved File</string>
+	<string name="dialog_links_downloaded_successfully_message">The file containing the links has been successfully saved. Full path: %1$s</string>
+	<string name="toast_image_url_copied">Image URL copied!</string>
+	<string name="dialog_downloading_image">Downloading image. Please wait...</string>
+	<string name="toast_download_image_cancelled">Download canceled.</string>
+	
+	<!-- BookmarksActivity -->
+	<string name="textview_empty_bookmark_list">No favorites have been added yet!</string>
+	<string name="dialog_add_bookmark">Add Bookmark</string>
+	<string name="dialog_edit_bookmark">Edit Bookmark</string>
+	<string name="dialog_delete_bookmark">Remove Bookmark</string>
+	<string name="dialog_delete_bookmark_confirmation">Are you sure you want to remove this bookmark?</string>
+	<string name="dialog_bookmark_title">Title</string>
+	<string name="dialog_load_page_url">Do you want to load the page now?</string>
+	<string name="dialog_request_permission_to_import_and_export_bookmarks">You must grant the application permission to function correctly when importing/exporting bookmarks.</string>
+	<string name="toast_successfully_imported_bookmarks">Bookmarks successfully imported!</string>
+	<string name="toast_successfully_exported_bookmarks">Bookmarks successfully exported!</string>
+	<string name="toast_need_export_bookmarks_before">You must export bookmarks first.</string>
+	<string name="toast_import_bookmarks_error">Unfortunately there was an error importing the bookmarks.</string>
+	<string name="toast_export_bookmarks_error">Unfortunately there was an error exporting the bookmarks.</string>
+	<string name="toast_bookmark_url_invalid">The page URL must be a valid URL.</string>
+	<string name="toast_bookmark_empty_fields_error">You must fill in all fields.</string>
+	
+	<!-- SettingsActivity -->
+	<string name="preference_general">General</string>
+	<string name="preference_image_viewer">Image Viewer</string>
+	<string name="preference_network">Network</string>
+	<string name="preference_downloads">Downloads</string>
+	<string name="preference_about">About</string>
+	<string name="preference_summary_select_app_theme">Select overall app theme</string>
+	<string name="preference_show_page_title">Show Page Title</string>
+	<string name="preference_summary_show_page_title">Get and show page title at top of screen when loading data</string>
+	<string name="preference_list_with_cardview">List with CardView</string>
+	<string name="preference_list_with_grid">Grid List</string>
+	<string name="preference_summary_list_with_grid">Image names will not be displayed in grid list</string>
+	<string name="preference_list_with_grid_columns">Number of Columns</string>
+	<string name="preference_summary_list_with_grid_columns">Number of columns in grid list</string>
+	<string name="preference_background_color">Background Color</string>
+	<string name="preference_zoom_level">Zoom Level</string>
+	<string name="preference_summary_zoom_level">Choose maximum zoom level</string>
+	<string name="preference_hide_statusbar">Hide Status Bar</string>
+	<string name="preference_user_agent">User Agent</string>
+	<string name="preference_summary_user_agent">This may change the amount of images displayed depending on the page</string>
+	<string name="preference_request_timeout">Request Timeout</string>
+	<string name="preference_summary_request_timeout">Request timeout to get data from a page</string>
+	<string name="preference_download_path">Downloads Folder</string>
+	<string name="preference_overwrite_existing_file">Overwrite Existing File</string>
+	<string name="preference_summary_overwrite_existing_file">Overwrites existing files with the same name during download. If unchecked, existing files will be given different names (recommended)</string>
+	<string name="preference_facebook_page">Facebook Page</string>
+	<string name="preference_summary_facebook_page">Like the K-Projects Facebook page and stay on top news</string>
+	<string name="preference_open_source_license">Open Source License</string>
+	<string name="dialog_app_theme">App Theme</string>
+	<string name="preference_exit_confirmation">Checkout Confirmation</string>
+	<string name="preference_summary_exit_confirmation">Choose the action that the \"back\" button on the home screen should take</string>
+	
+	<!-- FolderChooserDialogActivity -->
+	<string name="dialog_request_permission">Permission Request</string>
+	<string name="dialog_request_permission_info">You must grant permission for the file manager to function. Don\'t worry, the app does not collect any files or folders to share with others, and no data is obtained for any server.</string>
+	<string name="toast_folder_invalid">You cannot select this folder.</string>
+	<string name="textview_path">Path:</string>
+	
+	<!-- Menus -->
+	<string name="menu_settings">Settings</string>
+	<string name="menu_action_download">Download</string>
+	<string name="menu_action_select_all">Select All</string>
+	<string name="menu_bookmarks_import_bookmarks">Import Bookmarks</string>
+	<string name="menu_bookmarks_export_bookmarks">Export Bookmarks</string>
+	
+	<!-- Labels -->
+	<string name="label_settings">Settings</string>
+	<string name="label_bookmarks">Bookmarks</string>
+	<string name="label_privacy_policy">Privacy Policy</string>
+	
+</resources>

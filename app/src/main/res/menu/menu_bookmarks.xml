@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+    <item
+        android:id="@+id/menu_bookmarks_add_bookmark"
+        android:icon="@drawable/ic_baseline_add"
+		android:title="@string/dialog_add_bookmark"
+		app:showAsAction="always"/>
+	
+	<item
+        android:id="@+id/menu_bookmarks_import_bookmarks"
+        android:title="@string/menu_bookmarks_import_bookmarks"
+		app:showAsAction="never"/>
+	
+	<item
+        android:id="@+id/menu_bookmarks_export_bookmarks"
+        android:title="@string/menu_bookmarks_export_bookmarks"
+		app:showAsAction="never"/>
+	
+</menu>

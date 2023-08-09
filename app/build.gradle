@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+// Projeto iniciado em 10/08/19
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion 29
+	
+    defaultConfig {
+        applicationId "com.kproject.imageloader"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 210419
+        versionName "2.7"
+    }
+	
+    buildTypes {
+        release {
+			multiDexEnabled true
+            minifyEnabled false
+			proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+	implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation ('android.arch.core:runtime:1.1.1') {
+        force = true
+    }
+	implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+	implementation 'com.android.support:design:27.1.1'
+	implementation 'com.android.support:preference-v14:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+	implementation 'com.google.android.gms:play-services-ads-lite:17.2.1'
+	implementation 'com.github.MikeOrtiz:TouchImageView:1.4.0'
+	implementation 'com.squareup.picasso:picasso:2.5.2'
+	implementation 'org.jsoup:jsoup:1.12.1'
+}

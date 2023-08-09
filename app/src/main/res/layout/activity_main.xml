@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/dlMain_Drawerlayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:fitsSystemWindows="true">
+
+	<RelativeLayout
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<include
+			layout="@layout/main_toolbar"
+			android:id="@+id/tbMain_Toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:layout_alignParentTop="true"/>
+
+		<RelativeLayout
+			android:id="@+id/rlMain_MainLayout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@+id/avMain_AdView"
+			android:layout_below="@+id/tbMain_Toolbar"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:id="@+id/llMain_EmptyImageList"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<TextView
+						android:id="@+id/tvMain_EmptyImageListInfo"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="@string/textview_empty_image_list"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textColor="#000000"/>
+
+				</LinearLayout>
+
+				<android.support.v7.widget.RecyclerView
+					android:id="@+id/rvMain_ImageList"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:clipToPadding="false"
+					app:fastScrollEnabled="true"
+					app:fastScrollHorizontalThumbDrawable="@drawable/fast_scroll_thumb"
+					app:fastScrollHorizontalTrackDrawable="@drawable/fast_scroll_track"
+					app:fastScrollVerticalThumbDrawable="@drawable/fast_scroll_thumb"
+					app:fastScrollVerticalTrackDrawable="@drawable/fast_scroll_track"
+					android:visibility="gone"/>
+
+				<LinearLayout
+					android:id="@+id/llMain_LoadingPage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					android:visibility="gone">
+
+					<ProgressBar
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_gravity="center"/>
+
+					<TextView
+						android:id="@+id/tvMain_Loading"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="5dp"
+						android:freezesText="true"
+						android:gravity="center"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:textColor="#000000"/>
+					
+				</LinearLayout>
+
+			</LinearLayout>
+
+			<android.support.design.widget.FloatingActionButton
+				android:id="@+id/fabMain_LoadPage"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_alignParentBottom="true"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentEnd="true"
+				app:useCompatPadding="true"
+				app:borderWidth="0dp"
+				app:fabSize="normal"
+				android:src="@drawable/ic_search"/>
+
+		</RelativeLayout>
+
+		<com.google.android.gms.ads.AdView
+			xmlns:ads="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/avMain_AdView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentEnd="true"
+			android:visibility="gone"
+			ads:adSize="SMART_BANNER"
+			ads:adUnitId="@string/admob_unit_id_one"/>
+
+	</RelativeLayout>
+
+	<android.support.design.widget.NavigationView
+		android:id="@+id/nvMain_NavigationView"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent"
+		android:layout_gravity="start"
+		app:headerLayout="@layout/navigationview_header_main"
+		app:menu="@menu/menu_main_navigationview"/>
+
+</android.support.v4.widget.DrawerLayout>
+

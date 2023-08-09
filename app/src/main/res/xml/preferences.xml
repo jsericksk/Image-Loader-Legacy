@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory
+		android:title="@string/preference_general">
+		
+		<Preference
+			android:key="prefAppTheme"
+			android:title="@string/dialog_app_theme"/>
+		
+		<CheckBoxPreference 
+			android:key="prefShowPageTitle"
+			android:defaultValue="true"
+			android:title="@string/preference_show_page_title"
+			android:summary="@string/preference_summary_show_page_title"/>
+		
+		<CheckBoxPreference 
+			android:key="prefUseGridLayout"
+			android:defaultValue="true"
+			android:title="@string/preference_list_with_grid"
+			android:summary="@string/preference_summary_list_with_grid"/>
+		
+		<Preference
+			android:key="prefNumberOfColumnsInGride"
+			android:title="@string/preference_list_with_grid_columns"
+			android:summary="@string/preference_summary_list_with_grid_columns"/>
+		
+		<Preference
+			android:key="prefExitConfirmation"
+			android:title="@string/preference_exit_confirmation"
+			android:summary="@string/preference_summary_exit_confirmation"/>
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/preference_image_viewer">
+		
+		<Preference 
+			android:key="prefBackgroundColor"
+			android:title="@string/preference_background_color"/>
+		
+		
+		<Preference
+			android:key="prefZoomLevel"
+			android:title="@string/preference_zoom_level"
+			android:summary="@string/preference_summary_zoom_level"/>
+		
+		<CheckBoxPreference 
+			android:key="prefHideStatusbar"
+			android:defaultValue="true"
+			android:title="@string/preference_hide_statusbar"/>
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/preference_network">
+		
+		<Preference
+			android:key="prefUserAgent"
+			android:title="@string/preference_user_agent"
+			android:summary="@string/preference_summary_user_agent"/>
+	
+		<Preference
+			android:key="prefRequestTimeout"
+			android:title="@string/preference_request_timeout"
+			android:summary="@string/preference_summary_request_timeout"/>
+
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/preference_downloads">
+
+		<Preference 
+			android:key="prefDownloadPath"
+			android:title="@string/preference_download_path"/>
+		
+		<CheckBoxPreference 
+			android:key="prefOverwriteExistingFile"
+			android:defaultValue="false"
+			android:title="@string/preference_overwrite_existing_file"
+			android:summary="@string/preference_summary_overwrite_existing_file"/>
+		
+	</PreferenceCategory>
+	
+	<PreferenceCategory
+		android:title="@string/preference_about">
+		
+		<Preference
+			android:key="prefPrivacyPolicy"
+			android:title="@string/label_privacy_policy">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="https://jsericksk.github.io/image-loader"/>
+		</Preference>
+		
+		<Preference
+			android:title="@string/preference_facebook_page"
+			android:summary="@string/preference_summary_facebook_page">
+			<intent
+				android:action="android.intent.action.VIEW"
+				android:data="https://m.facebook.com/kprojectsapps"/>
+		</Preference>
+		
+		<Preference
+			android:key="prefOpenSourceLicense"
+			android:title="@string/preference_open_source_license"/>
+		
+	</PreferenceCategory>
+</PreferenceScreen>

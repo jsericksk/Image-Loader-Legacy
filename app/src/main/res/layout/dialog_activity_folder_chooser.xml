@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/rlFolderChooser_MainLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_above="@+id/llFolderChooser_ButtonsLayout"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/tvFolderChooser_CurrentPath"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:padding="5dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textSize="16sp"
+			android:textColor="#000000"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="#747474"/>
+
+		<android.support.v7.widget.RecyclerView
+			android:id="@+id/rvFolderChooser_ManagerList"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1.0"
+			android:scrollbars="vertical"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/llFolderChooser_ButtonsLayout"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:layout_gravity="right"
+		android:layout_marginBottom="8dp"
+		android:layout_marginRight="6dp"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentRight="true"
+		android:orientation="horizontal">
+
+		<Button
+			android:id="@+id/btFolderChooser_Cancel"
+			android:layout_height="wrap_content"
+			android:text="@string/button_cancel"
+			android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="false"
+			android:layout_toLeftOf="@+id/btFolderChooser_Select"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+		<Button
+			android:id="@+id/btFolderChooser_Select"
+			android:layout_height="wrap_content"
+			android:text="@string/button_select"
+			android:layout_width="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_alignParentRight="true"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

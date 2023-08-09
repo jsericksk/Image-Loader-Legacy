@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="dark_textview">#959595</color>
+	<color name="dark_layout_background">#252525</color>
+</resources>

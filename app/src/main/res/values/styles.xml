@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Temas para as Activities -->
+	<style name="ThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">#303030</item>
+		<item name="colorPrimaryDark">#252525</item>
+		<item name="colorAccent">#2196F3</item>
+		<item name="preferenceTheme">@style/ThemePreferencesDark</item>
+	</style>
+	
+	<style name="ThemePreferencesDark" parent="PreferenceThemeOverlay.v14.Material">
+		<item name="colorPrimary">#303030</item>
+		<item name="colorPrimaryDark">#252525</item>
+		<item name="colorAccent">#2196F3</item>
+		<item name="android:background">#303030</item>
+		<item name="android:colorBackground">#252525</item>
+		<item name="android:textColorPrimary">#CCCCCC</item>
+		<item name="android:textColorSecondary">#959595</item>
+	</style>
+	
+	<style name="DarkToolbarStyle" parent="ThemeOverlay.AppCompat.Light">
+		<item name="android:colorBackground">#303030</item>
+		<item name="android:textColor">#FFFFFF</item>
+	</style>
+	
+	<style name="ThemeRed" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">#C62828</item>
+		<item name="colorPrimaryDark">#B71C1C</item>
+		<item name="colorAccent">#E53935</item>
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+	</style>
+	
+	<style name="ThemeGreen" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">#2E7D32</item>
+		<item name="colorPrimaryDark">#1B5E20</item>
+		<item name="colorAccent">#43A047</item>
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+	</style>
+
+	<style name="ThemeBlue" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">#1976D2</item>
+		<item name="colorPrimaryDark">#0D47A1</item>
+		<item name="colorAccent">#2979FF</item>
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+	</style>
+
+	<style name="ThemePink" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">#F06292</item>
+		<item name="colorPrimaryDark">#D81B60</item>
+		<item name="colorAccent">#FF4081</item>
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+	</style>
+
+	<style name="ThemePurple" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">#8E24AA</item>
+		<item name="colorPrimaryDark">#6A1B9A</item>
+		<item name="colorAccent">#9C27B0</item>
+		<item name="preferenceTheme">@style/PreferenceThemeOverlay.v14.Material</item>
+	</style>
+	
+	<!-- Temas para a ImageViewerActivity e Toolbars -->
+	<style name="ThemeToolbarDark" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">#303030</item>
+		<item name="colorPrimaryDark">#252525</item>
+		<item name="colorAccent">#2196F3</item>
+		<item name="windowActionModeOverlay">true</item>
+	</style>
+	
+	<style name="ThemeToolbarRed" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">#C62828</item>
+		<item name="colorPrimaryDark">#B71C1C</item>
+		<item name="colorAccent">#E53935</item>
+		<item name="windowActionModeOverlay">true</item>
+	</style>
+
+	<style name="ThemeToolbarGreen" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">#2E7D32</item>
+		<item name="colorPrimaryDark">#1B5E20</item>
+		<item name="colorAccent">#43A047</item>
+		<item name="windowActionModeOverlay">true</item>
+	</style>
+
+	<style name="ThemeToolbarBlue" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">#1976D2</item>
+		<item name="colorPrimaryDark">#0D47A1</item>
+		<item name="colorAccent">#2979FF</item>
+		<item name="windowActionModeOverlay">true</item>
+	</style>
+
+	<style name="ThemeToolbarPink" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">#F06292</item>
+		<item name="colorPrimaryDark">#D81B60</item>
+		<item name="colorAccent">#FF4081</item>
+		<item name="windowActionModeOverlay">true</item>
+	</style>
+
+	<style name="ThemeToolbarPurple" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="colorPrimary">#8E24AA</item>
+		<item name="colorPrimaryDark">#6A1B9A</item>
+		<item name="colorAccent">#9C27B0</item>
+		<item name="windowActionModeOverlay">true</item>
+	</style>
+
+	<!-- Temas para os Dialogs -->
+	<style name="ThemeDialogDark" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">#2196F3</item>
+		<item name="android:colorBackground">#303030</item>
+		<item name="editTextColor">#FFFFFF</item>
+		<item name="android:textColorPrimary">#FFFFFF</item>
+		<item name="textColorAlertDialogListItem">#FFFFFF</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="ThemeDialogRed" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">#e53935</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="ThemeDialogGreen" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">#43a047</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="ThemeDialogBlue" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">#2979FF</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="ThemeDialogPink" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">#FF4081</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+
+	<style name="ThemeDialogPurple" parent="Theme.AppCompat.Light.Dialog.Alert">
+		<item name="colorAccent">#9C27B0</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+	</style>
+	
+</resources>

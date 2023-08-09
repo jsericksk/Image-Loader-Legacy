@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/flImageViewer_MainLayout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<android.support.v4.view.ViewPager
+		android:id="@+id/vpImageViewer_ViewPager"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"/>
+
+	<include
+		layout="@layout/toolbar_image_viewer"
+		android:id="@+id/tbImageViewer_Toolbar"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:layout_gravity="top"/>
+
+	<LinearLayout
+		android:id="@+id/llImageViewer_BottomLayout"
+		android:layout_width="match_parent"
+		android:layout_height="?attr/actionBarSize"
+		android:layout_gravity="bottom"
+		android:background="?attr/colorPrimary"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<ImageButton
+			android:id="@+id/ibImageViewer_Share"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:src="@drawable/ic_share"
+			style="?android:attr/buttonBarButtonStyle"/>
+
+		<ImageButton
+			android:id="@+id/ibImageViewer_Download"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:src="@drawable/ic_download"
+			style="?android:attr/buttonBarButtonStyle"/>
+		
+		<ImageButton
+			android:id="@+id/ibImageViewer_Info"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:src="@drawable/ic_info"
+			style="?android:attr/buttonBarButtonStyle"/>
+		
+		<ImageButton
+			android:id="@+id/ibImageViewer_AccessPage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginStart="8dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:src="@drawable/ic_web"
+			style="?android:attr/buttonBarButtonStyle"/>
+		
+	</LinearLayout>
+
+</FrameLayout>
+

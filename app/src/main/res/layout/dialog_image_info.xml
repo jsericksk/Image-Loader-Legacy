@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="horizontal"
+		android:padding="24dp">
+
+		<LinearLayout
+			android:id="@+id/llImageInfo_ImageName"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tvImageInfo_NameInfo"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/dialog_image_info_name"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/tvImageInfo_Name"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginStart="5dp"
+				android:textColor="#000000"
+				android:textSize="16sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/llImageInfo_ImageSize"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/llImageInfo_ImageName"
+			android:layout_marginTop="3dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tvImageInfo_SizeInfo"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/dialog_image_info_size"
+				android:textColor="#000000"
+				android:textSize="16sp"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/tvImageInfo_Size"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginStart="5dp"
+				android:textColor="#000000"
+				android:textSize="16sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/llImageInfo_ImageResolution"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/llImageInfo_ImageSize"
+			android:layout_marginTop="3dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tvImageInfo_ResolutionInfo"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/dialog_image_info_resolution"
+				android:textColor="#000000"
+				android:textSize="16sp"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/tvImageInfo_Resolution"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginStart="5dp"
+				android:textColor="#000000"
+				android:textSize="16sp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/llImageInfo_ImageUrl"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/llImageInfo_ImageResolution"
+			android:layout_marginTop="3dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tvImageInfo_UrlInfo"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/dialog_image_info_url"
+				android:textColor="#000000"
+				android:textSize="16sp"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/tvImageInfo_Url"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_weight="1.0"
+				android:textColor="#000000"
+				android:textSize="16sp"/>
+
+			<ImageButton
+				android:id="@+id/ibImageInfo_CopyUrl"
+				android:layout_width="55dp"
+				android:layout_height="55dp"
+				android:layout_marginStart="5dp"
+				android:layout_gravity="center_vertical"
+				android:src="@drawable/ic_copy"
+				android:scaleType="centerCrop"
+				style="?android:attr/buttonBarButtonStyle"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/llImageInfo_ImagePage"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:layout_below="@+id/llImageInfo_ImageUrl"
+			android:layout_marginTop="3dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tvImageInfo_ImagePageInfo"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_vertical"
+				android:text="@string/dialog_image_info_source"
+				android:textColor="#000000"
+				android:textSize="16sp"
+				android:textStyle="bold"/>
+
+			<TextView
+				android:id="@+id/tvImageInfo_ImagePageUrl"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_marginStart="5dp"
+				android:layout_weight="1.0"
+				android:textColor="#000000"
+				android:textSize="16sp"/>
+
+		</LinearLayout>
+
+	</RelativeLayout>
+
+</ScrollView>
+

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string-array name="app_theme_options">        
+		<item>Light</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+		<item>Pink</item>
+		<item>Purple</item>
+	</string-array>
+	
+	<string-array name="number_of_columns_in_grid">        
+		<item>2</item>
+        <item>3</item>
+        <item>4</item>
+	</string-array>
+	
+	<string-array name="exit_confirmation">        
+		<item>Deshabilitado</item>
+        <item>Snackbar con Confirmación</item>
+        <item>Toast con Doble Toque</item>
+	</string-array>
+	
+	<string-array name="zoom_level">        
+		<item>Estándar</item>
+		<item>Pequeño</item>
+        <item>Medio</item>
+		<item>Grande</item>
+	</string-array>
+	
+	<string-array name="user_agent">        
+		<item>Chrome</item>
+        <item>Opera</item>
+		<item>Deshabilitado</item>
+		<item>Firefox</item>
+		<item>Internet Explorer</item>
+	</string-array>
+	
+	<string-array name="request_timeout">        
+		<item>15 seg.</item>
+        <item>30 seg.</item>
+		<item>1 min.</item>
+	</string-array>
+	
+</resources>
