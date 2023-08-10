@@ -7,16 +7,16 @@ import com.kproject.imageloader.R;
 import com.kproject.imageloader.utils.Utils;
 
 public class OpenSourceLicenseActivity extends AppCompatActivity {
-	
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setTheme(Utils.setThemeForActivity());
-		super.onCreate(savedInstanceState);
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_open_source_license);
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-		
-		WebView webView = findViewById(R.id.wvOpenSourceLicense_WebView);
-		webView.loadUrl("file:///android_asset/license.html");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        WebView webView = findViewById(R.id.wvOpenSourceLicense_WebView);
+        webView.loadUrl("file:///android_asset/license.html");
     }
-	
+
 }

@@ -6,12 +6,12 @@ import com.kproject.imageloader.utils.Utils;
 
 public abstract class BaseActivity extends AppCompatActivity {
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		setTheme(Utils.setThemeForToolbar());
-		super.onCreate(savedInstanceState);
-	}
-	
-	public abstract void setThemeColors();
-	
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        setTheme(Utils.setThemeForToolbar());
+        super.onCreate(savedInstanceState);
+    }
+
+    public abstract void setThemeColors();
+
 }

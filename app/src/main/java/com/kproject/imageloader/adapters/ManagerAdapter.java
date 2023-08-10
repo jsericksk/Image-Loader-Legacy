@@ -13,73 +13,74 @@ import com.kproject.imageloader.adapters.ManagerAdapter;
 import com.kproject.imageloader.models.Manager;
 import com.kproject.imageloader.utils.Constants;
 import com.kproject.imageloader.utils.Utils;
+
 import java.util.List;
 
 public class ManagerAdapter extends RecyclerView.Adapter<ManagerAdapter.ItemHolder> {
-	private List<Manager> folderList;
-	private LayoutInflater layoutInflater;
-	private ItemClickListener clickListener;
+    private List<Manager> folderList;
+    private LayoutInflater layoutInflater;
+    private ItemClickListener clickListener;
 
-	public ManagerAdapter(Context context, List<Manager> folderList) {
-		this.layoutInflater = LayoutInflater.from(context);
-		this.folderList = folderList;
-	}
+    public ManagerAdapter(Context context, List<Manager> folderList) {
+        this.layoutInflater = LayoutInflater.from(context);
+        this.folderList = folderList;
+    }
 
-	@Override
-	public ManagerAdapter.ItemHolder onCreateViewHolder(ViewGroup parent, int position) {
-		View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_manager_adapter, parent, false);
-		ItemHolder item = new ItemHolder(view);
-		return item;
-	}
+    @Override
+    public ManagerAdapter.ItemHolder onCreateViewHolder(ViewGroup parent, int position) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_manager_adapter, parent, false);
+        ItemHolder item = new ItemHolder(view);
+        return item;
+    }
 
-	@Override
-	public void onBindViewHolder(ManagerAdapter.ItemHolder item, int position) {
-		String name = folderList.get(position).getFolderName();
-		item.tvItemName.setText(name);
+    @Override
+    public void onBindViewHolder(ManagerAdapter.ItemHolder item, int position) {
+        String name = folderList.get(position).getFolderName();
+        item.tvItemName.setText(name);
 
-		if (folderList.get(position).getFolderName().endsWith("...")) {
-			item.ivImage.setImageResource(R.drawable.back_icon);
-		} else {
-			item.ivImage.setImageResource(R.drawable.folder_icon);
-		}
-		
-		if (Utils.getThemeSelected().equals(Constants.THEME_DARK)) {
-			item.tvItemName.setTextColor(Color.parseColor("#CCCCCC"));
-		}
-	}
+        if (folderList.get(position).getFolderName().endsWith("...")) {
+            item.ivImage.setImageResource(R.drawable.back_icon);
+        } else {
+            item.ivImage.setImageResource(R.drawable.folder_icon);
+        }
 
-	@Override
-	public int getItemCount() {
-		return folderList.size();
-	}
+        if (Utils.getThemeSelected().equals(Constants.THEME_DARK)) {
+            item.tvItemName.setTextColor(Color.parseColor("#CCCCCC"));
+        }
+    }
 
-	public void setClickListener(ItemClickListener itemClickListener) {
-		this.clickListener = itemClickListener;
-	}
+    @Override
+    public int getItemCount() {
+        return folderList.size();
+    }
 
-	// Classe responsável pela View
-	public class ItemHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
-		TextView tvItemName;
-		ImageView ivImage;
+    public void setClickListener(ItemClickListener itemClickListener) {
+        this.clickListener = itemClickListener;
+    }
 
-		public ItemHolder(View view) {
-			super(view);
-			tvItemName = view.findViewById(R.id.tvManagerAdapter_FolderName);
-			ivImage = view.findViewById(R.id.ivManagerAdapter_ImageIcon);
-			itemView.setOnClickListener(this);
-		}
+    // Classe responsável pela View
+    public class ItemHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+        TextView tvItemName;
+        ImageView ivImage;
 
-		@Override
-		public void onClick(View view) {
-			if (clickListener != null) {
-				clickListener.onRecyclerViewItemClick(view, getLayoutPosition());
-			}
-		}
+        public ItemHolder(View view) {
+            super(view);
+            tvItemName = view.findViewById(R.id.tvManagerAdapter_FolderName);
+            ivImage = view.findViewById(R.id.ivManagerAdapter_ImageIcon);
+            itemView.setOnClickListener(this);
+        }
 
-	}
+        @Override
+        public void onClick(View view) {
+            if (clickListener != null) {
+                clickListener.onRecyclerViewItemClick(view, getLayoutPosition());
+            }
+        }
 
-	public interface ItemClickListener {
-		void onRecyclerViewItemClick(View view, int position);
-	}
+    }
+
+    public interface ItemClickListener {
+        void onRecyclerViewItemClick(View view, int position);
+    }
 
 }
